@@ -1,0 +1,140 @@
+/* Import Google Web fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
+body {
+    /* sets the page defaults e.g. background and default typography */
+    background: #fff;
+    font-family: 'open sans', open sans-serif;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.);
+    padding: 1em;
+    width: 80%
+}
+
+
+/* a few tweaks here and there */
+
+h2 {
+    margin: auto;
+}
+
+figure {
+    margin: 0 auto;
+    /* resets the left margin in the figure*/
+}
+
+     figure img {
+
+    /* images will shrink to fit inside the main conent column*/
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.0);
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+}
+
+blockquote {
+    width: 66%;
+    margin: 1em auto;
+    background: #ddd;
+    padding: 1em;
+    font-size: 1.25em;
+    text-align: center;
+    color: #745AAF  ;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+
+}
+
+
+/* Styling the full-page background headers */
+
+.image_bg, .color_bg {
+    height: 100vh;
+    /* this sets the height of each full width image section to that of the viewport.*/
+    position: relative;
+    /*display: flex;  */
+    background-position: center !important;
+}
+
+
+/* the text inside the headers */
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 0 9px #000000;
+    width: 75%;
+    text-align: center;
+    /*   margin: auto;
+   */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    padding: 1em
+}
+
+header h1 {
+    margin: 0 auto;
+    font-size: 6vw;
+    padding: 1em
+}
+
+header a {
+    color: white;
+    padding:1em
+}
+
+
+/* Styles for individual header sections by class name. */
+
+.poster {
+    background: url(../images/poster.JPG) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* the background image doesn't move when scrolling*/
+}
+
+
+/* the above style gets copied for every new section header with background image. Each new copy has a new class name. */
+
+.bird {
+    background: url(../images/bird.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.brookside {
+    background: url(../images/brookside.JPG) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* the background image doesn't move when scrolling*/
+}
+
+/* Content sections */
+
+.content {
+    margin: 0 auto;
+    padding: 1em;
+    width: 75%;
+    box-sizing: border-box;
+    /* this in-effect sets the content section's width e.g. 20% = 60% width. */
+}
+
+footer {
+    height: 100px;
+    background: #000;
+    color: #eee;
+
+    padding: 1em;
+}
